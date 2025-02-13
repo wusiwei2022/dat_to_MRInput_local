@@ -1,0 +1,1 @@
+### dat_to_MRInput_local is to convert a TwoSampleMR object to a MendelianRandomization object.

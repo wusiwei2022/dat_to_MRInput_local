@@ -1,5 +1,5 @@
 # dat_to_MR_Input_local
-dat_to_MRInput_local is a R function to convert a TwoSampleMR object to a MendelianRandomization object.<br>
+dat_to_MRInput_local is a R function to convert a [TwoSampleMR](https://mrcieu.github.io/TwoSampleMR/) object to a [MendelianRandomization](https://cran.r-project.org/web/packages/MendelianRandomization/index.html) object.<br>
 This function makes the conversion as the TwoSampleMR::dat_to_MRInput() function does.<br>
 With dat_to_MRInput_local, we managed to make this conversion to be a local process.<br>
 TwoSampleMR is usually the most used package to process and format GWAS summary data.<br>
@@ -26,7 +26,7 @@ The output will be a MendelianRandomization object which can be fed into R funct
 source("./dat_to_MRInput_local.r")
 dat_to_MRInput(dat, get_correlations = FALSE, pop = "EUR", path = NULL)
 ```
-dat is the harmonised and pre-clumped TwoSampleMR object.<br>
-get_correlations can be set TRUE to include an LD correlation matrix into the output MendelianRandomization object.<br>
-pop is EUR by default, but you should rename it as the filename of reference genome in plink binary format (.bed, .bim, and .fam).<br>
-path is the path to the reference genome file. This parameter must be provided if get_correlations is set TRUE. 
+* dat is the harmonised and pre-clumped TwoSampleMR object.<br>
+* get_correlations can be set TRUE to include an LD correlation matrix into the output MendelianRandomization object.<br>
+* pop is EUR by default, but you should rename it as the filename of reference genome in plink binary format (.bed, .bim, and .fam).<br>
+* path is the path to the reference genome file. This parameter must be provided if get_correlations is set TRUE. 

@@ -15,7 +15,7 @@ Althougn TwoSampleMR::dat_to_MRInput() can convert data from TwoSampleMR format 
 
 ## Usage
 ```r
-source("./dat_to_MRInput_local.r")
+source_url("https://raw.githubusercontent.com/wusiwei2022/dat_to_MRInput_local/refs/heads/master/Codes_dat_to_MRInput_local.R")
 dat_to_MRInput(dat, get_correlations = FALSE, pop = "EUR", path = NULL)
 ```
 * dat: the harmonised and pre-clumped TwoSampleMR object.<br>
